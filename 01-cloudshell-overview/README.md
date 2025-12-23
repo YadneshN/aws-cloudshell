@@ -6,7 +6,6 @@
 pwd
 whoami
 aws --version
-aws configure get region
 echo $AWS_REGION
 aws sts get-caller-identity
 aws configure list
