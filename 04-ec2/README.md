@@ -14,7 +14,7 @@ aws ec2 authorize-security-group-ingress --group-name cloudshell-sg --protocol t
 
 ## Launch Instance
 ```bash
-aws ec2 run-instances --image-id ami-02b8269d5e85954ef --instance-type t3.micro --key-name cloudshell-key --security-groups cloudshell-sg --count 1
+aws ec2 run-instances --image-id ami-02b8269d5e85954ef --instance-type t3.micro --key-name cloudshell-key --security-groups cloudshell-sg --count 1 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=ubuntu-vm}]'
 ```
 
 ## List Instances
