@@ -1,9 +1,4 @@
-# Amazon EC2 (Free Tier)
-
-## Find Amazon Linux 2 AMI
-```bash
-aws ec2 describe-images --owners amazon --filters "Name=name,Values=amzn2-ami-hvm-*-x86_64-gp2" --query "Images[*].[ImageId,CreationDate]" --output table
-```
+# Ubuntu EC2 (Free Tier)
 
 ## Create Key Pair
 ```bash
@@ -19,7 +14,7 @@ aws ec2 authorize-security-group-ingress --group-name cloudshell-sg --protocol t
 
 ## Launch Instance
 ```bash
-aws ec2 run-instances --image-id ami-xxxxxxxx --instance-type t2.micro --key-name cloudshell-key --security-groups cloudshell-sg --count 1
+aws ec2 run-instances --image-id ami-02b8269d5e85954ef --instance-type t3.micro --key-name cloudshell-key --security-groups cloudshell-sg --count 1
 ```
 
 ## List Instances
