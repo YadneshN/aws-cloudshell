@@ -28,3 +28,8 @@ aws ec2 stop-instances --instance-ids i-xxxxxxxx
 aws ec2 start-instances --instance-ids i-xxxxxxxx
 aws ec2 terminate-instances --instance-ids i-xxxxxxxx
 ```
+
+## Delete Security Group
+```bash
+aws ec2 delete-security-group --group-name cloudshell-sg
+```
