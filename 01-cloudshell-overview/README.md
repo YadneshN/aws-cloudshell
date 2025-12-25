@@ -1,3 +1,6 @@
+# CloudShell in One Line
+AWS CloudShell is a ready-to-use command line in your browser that lets you manage AWS resources without installing anything.
+
 # CloudShell Overview
 AWS CloudShell is a browser-based command-line environment for interacting with your AWS account, providing pre-configured tools (AWS CLI, Python, etc.) and 1GB of persistent storage per region, eliminating local setup for quick management, scripting, and exploration of AWS resources directly from your browser. It uses your existing console credentials for secure access and is ideal for running commands, uploading/downloading files, and running scripts without installing software. 
 
