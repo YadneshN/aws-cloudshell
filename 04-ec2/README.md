@@ -33,3 +33,8 @@ aws ec2 terminate-instances --instance-ids i-xxxxxxxx
 ```bash
 aws ec2 delete-security-group --group-name cloudshell-sg
 ```
+
+## Delete the Key Pair
+```bash
+aws ec2 delete-key-pair --key-name cloudshell-key
+```
